@@ -6,4 +6,4 @@ const spotify = () => {
   )
 }
 
-export default spotify
+export default spotify;
