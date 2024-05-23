@@ -1,8 +1,13 @@
 import React from 'react';
 
+import Sidebar from './components/sidebar.jsx'
 const App = () => {
   return (
-    <div className=''>App</div>
+    <div className='h-screen bg-black'>
+      <div className='h-[90%] flex'>
+          <Sidebar />
+      </div>
+    </div>
   )
 }
 
