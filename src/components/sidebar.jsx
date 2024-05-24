@@ -1,7 +1,9 @@
 import React from 'react';
-import {assets} from '../assets/assets'
+import {assets} from '../assets/assets';
 
 const sidebar = () => {
+
+
   return (
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-color-white hidden lg:flex'>
         <div className='bg-[#121212] pt-4 h-[15%] rounded flex-col justify-around'>
@@ -16,8 +18,15 @@ const sidebar = () => {
         </div>     
         <div className='h-[85%] bg-[#121212] rounded'>
             <div className='p-4 flex items-center gap-3'>
-                <img className='w-8' src={assets.stack_icon} alt="" />
+                <img className='w-8' src={assets.stack_icon} alt="stack icon" />
                 <p className='text-white font-semibold'>Your Library</p>
+                <div className='flex items-center ml-32 gap-6'>
+                    <img className='w-3 cursor-pointer' src={assets.arrow_left} alt="stack icon" />
+                    <img className='w-3 cursor-pointer' src={assets.arrow_right} alt="stack icon" />
+                </div>
+            </div>
+            <div className='bg-[#fff]'>
+                <p>jfhf</p>
             </div>
         </div>   
     </div>

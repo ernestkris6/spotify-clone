@@ -1,12 +1,17 @@
 import React from 'react';
+import Sidebar from './components/sidebar.jsx';
+import Player from './components/player.jsx';
 
-import Sidebar from './components/sidebar.jsx'
+
 const App = () => {
   return (
     <div className='h-screen bg-black'>
       <div className='h-[90%] flex'>
           <Sidebar />
       </div>
+        <div>
+          <Player />
+        </div>
     </div>
   )
 }
