@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import { useParams } from 'react-router-dom';
-import { albumsData, assets } from '../../assets/assets';
+import { albumsData, assets, songsData } from '../../assets/assets';
 
 
 const DisplayAlbum = () => {
@@ -32,12 +32,25 @@ const DisplayAlbum = () => {
         <div className='grid grid-cols-3 sm:grid-cols-4 mt-10 pl-2 text-[#a7a7a7]'>
             <p><b className='mr-4'>#</b>Title</p>
             <p>Album</p>
+             {/*Date added */}
             <p className='hidden sm:block'>Date added</p>
             <img className='w-4 m-auto' src={assets.clock_icon} alt="" />
         </div>
         <hr className='mt-1'/>
-
-
+        {songsData.map((item,index)=> (
+            <div key={index} className='grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 items-center'>
+                 <p className='text-white'>
+                    <b className='mr-4 text-[#a7a7a7]'>{index + 1}</b>
+                    <img className='inline w-10 mr-5' src={item.image} alt="" />
+                    {item.name}
+                </p>
+                <p className='text-[15px]'>{albumData.name}</p>
+                {/*Date added */}
+                <p className='text-[15px] hidden sm:block'>5 days ago</p>
+                <p className='text-[15px] text-center'>{item.duration}</p>
+            </div>
+            
+        ))}
     </>
   )
 }

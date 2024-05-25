@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const SongItem = ({name, desc, image, id}) => {
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  
   return (
     <div onClick={()=> navigate(`/album/${id}`)} className='min-w-[180px] cursor-pointer rounded hover:bg-[#ffffff26] p-2 px-3'>
         <img src={image} alt="" />
