@@ -28,6 +28,7 @@ const DisplayHome = () => {
           <div className='my-5 font-bold text-2xl flex overflow-auto'>
           {songsData.map((item, index)=> (
             <SongItem
+            key={index} 
             name={item.name}
             image={item.image}
             desc={item.desc}
