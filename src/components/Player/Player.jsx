@@ -1,5 +1,5 @@
 import React from 'react';
-import { assets, songsData } from '../assets/assets';
+import { assets, songsData } from '../../assets/assets';
 
 const player = () => {
   return (

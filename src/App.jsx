@@ -1,7 +1,7 @@
 import React from 'react';
-import Sidebar from './components/Sidebar.jsx';
-import Player from './components/Player.jsx';
-import Display from './components/Display.jsx'
+import Sidebar from './components/Sidebar/Sidebar.jsx';
+import Player from './components/Player/Player.jsx';
+import Display from './components/Display/Display.jsx'
 
 const App = () => {
   return (

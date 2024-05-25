@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar';
-import { albumsData, songsData } from '../assets/assets';
-import AlbumItem from './AlbumItem';
-import SongItem from './SongItem';
+import Navbar from '../Navbar/Navbar';
+import { albumsData, songsData } from '../../assets/assets';
+import AlbumItem from '../Album/AlbumItem';
+import SongItem from '../Album/SongItem';
 
 const DisplayHome = () => {
   return (
