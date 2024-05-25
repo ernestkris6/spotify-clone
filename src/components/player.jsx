@@ -7,8 +7,8 @@ const player = () => {
         <div className='hidden lg:flex items-center gap-4'>
             <img className='w-12' src={songsData[0].image} alt="" />
             <div>
-              {/* <p>{songsData.[0].name}</p>
-              <p>{songsData.[0].description}</p> */}
+              <p className='text-white'>{songsData[0].name}</p>
+              <p className='text-white'>{songsData[0].desc.slice(0,24)}</p>
             </div>
         </div>
         <div className='flex flex-col items-center gap-1 m-auto'>
