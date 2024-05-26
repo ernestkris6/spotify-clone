@@ -4,7 +4,10 @@ import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
+    
+   
     const navigate = useNavigate();
+    
 
     return (
         <>
@@ -28,4 +31,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar
+export default Navbar;
