@@ -30,7 +30,7 @@ const player = () => {
             <div className='flex items-center gap-5'>
                 <p>{time.currentTime.minute}:{time.currentTime.second}</p>
                 <div ref={seekBg} className='w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'>
-                  <hr ref={seekBar} className='h-1 border-none w-20 bg-green-800 rounded-full'></hr>
+                  <hr ref={seekBar} className='h-1 border-none w-0 bg-green-800 rounded-full'></hr>
                 </div>
                 <p>{time.totalTime.minute}:{time.totalTime.second}</p>
             </div>
