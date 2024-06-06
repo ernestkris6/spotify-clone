@@ -14,7 +14,7 @@ const display = () => {
   const albumId = isAlbum ? location.pathname.slice(-1) : "";
   // console.log(albumId);  
   const bgColor = albumsData[Number(albumId)].bgColor;
-  console.log(bgColor);
+  //console.log(bgColor);
 
   useEffect(()=> {
       if(isAlbum){
