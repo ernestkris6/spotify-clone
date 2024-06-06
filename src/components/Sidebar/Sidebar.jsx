@@ -1,7 +1,7 @@
 import React from 'react';
 import {assets} from '../../assets/assets';
 
-const sidebar = () => {
+const Sidebar = () => {
 
 
   return (
@@ -42,4 +42,4 @@ const sidebar = () => {
   )
 }
 
-export default sidebar;
+export default Sidebar;
