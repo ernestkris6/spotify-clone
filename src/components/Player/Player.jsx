@@ -41,7 +41,7 @@ const player = () => {
             <img className='w-4 cursor-pointer' src={assets.queue_icon} alt="" />
             <img className='w-4 cursor-pointer' src={assets.speaker_icon} alt="" />
             <img className='w-4 cursor-pointer' src={assets.volume_icon} alt="" />
-            <div className='w-20 bg-slate-50 h-1 rounded'>
+            <div className='w-20 bg-slate-50 cursor-pointer h-1 rounded'>
 
             </div>
             <img className='w-4 cursor-pointer' src={assets.mini_player_icon} alt="" />
