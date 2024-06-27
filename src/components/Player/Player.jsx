@@ -20,7 +20,10 @@ const player = () => {
             <div className='flex gap-4'>
               <img className='w-4 cursor-pointer' src={assets.shuffle_icon} alt="" />
               <img onClick={previous} className='w-4 cursor-pointer' src={assets.prev_icon} alt="" />
-              {/* Using tenary operators if playStatus is true display the pause icon else display the play icon */}
+              {/* Using tenary operators if 
+              playStatus is true display the 
+              pause icon else display the play 
+              icon */}
               {playStatus ? <img onClick={pause} className='w-4 cursor-pointer' src={assets.pause_icon} alt="" /> 
               :  
               <img onClick={play} className='w-4 cursor-pointer' src={assets.play_icon} alt="" />}
