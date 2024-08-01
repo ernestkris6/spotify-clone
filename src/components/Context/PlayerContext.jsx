@@ -73,6 +73,7 @@ const PlayerContextProvider = (props) => {
                 setTime({
                     currentTime: {
                         second: Math.floor(audioRef.current.currentTime % 60),
+                        
                         minute: Math.floor(audioRef.current.currentTime / 60)
                     },
                     totalTime: {
