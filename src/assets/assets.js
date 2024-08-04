@@ -43,6 +43,7 @@ import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
 import song4 from  './song4.mp3'
 import song5 from './song5.mp3'
+import song6 from './song6.mp3'
 
 
 export const assets = {
@@ -162,7 +163,7 @@ export const songsData = [
         id:5,
         name: "Song Six",
         image: img14    ,
-        file:song3,
+        file:song6,
         desc:"Put a smile on your face with these happy tunes",
         duration:"2:45"
     },
