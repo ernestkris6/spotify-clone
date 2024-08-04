@@ -165,7 +165,7 @@ export const songsData = [
         image: img14    ,
         file:song6,
         desc:"Put a smile on your face with these happy tunes",
-        duration:"2:45"
+        duration:"4:44"
     },
     {
         id:6,
