@@ -21,11 +21,15 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='flex items-center gap-2 mt-4'>
-                <Link to="//album/0">
+                <Link to="/">
                 <p className='bg-white text-black px-4 rounded-2xl cursor-pointer'>All</p>
                 </Link>
-                <p className='bg-black py-1 px-4 rounded-2xl cursor-pointer' onClick={()=> navigate("album/:id")}>Music</p>
+                <Link to="/">
+                <p className='bg-black py-1 px-4 rounded-2xl cursor-pointer' >Music</p>
+                </Link>
+                <Link to="/">
                 <p className='bg-black py-1 px-4 rounded-2xl cursor-pointer'>Podcasts</p>
+                </Link>
             </div>
         </>
   );
