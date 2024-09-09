@@ -1,6 +1,6 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
    
@@ -21,8 +21,10 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='flex items-center gap-2 mt-4'>
-                <p className='bg-white text-black px-4 rounded-2xl cursor-pointer' onClick={()=> navigate('/')}>All</p>
-                <p className='bg-black py-1 px-4 rounded-2xl cursor-pointer' onClick={()=> navigate("/album/:id")}>Music</p>
+                <Link to="//album/0">
+                <p className='bg-white text-black px-4 rounded-2xl cursor-pointer'>All</p>
+                </Link>
+                <p className='bg-black py-1 px-4 rounded-2xl cursor-pointer' onClick={()=> navigate("album/:id")}>Music</p>
                 <p className='bg-black py-1 px-4 rounded-2xl cursor-pointer'>Podcasts</p>
             </div>
         </>
